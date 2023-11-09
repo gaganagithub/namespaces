@@ -21,7 +21,8 @@ spec:
       command: ["/bin/bash", "-c", "while true; do echo Technical Guftgu; sleep 5 ; done"]
   restartPolicy: Never       
 
-
+$ kubectl config set-context $(kubectl config current-context) --namespace=dev
+$ kubectl config view | grep namespace:
 
 
 
